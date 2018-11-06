@@ -15,6 +15,9 @@ const Conversation = props =>
       showCloseButton={props.showCloseButton}
       titleAvatar={props.titleAvatar}
     />
+    <div className="warning-container" id="warning">
+      <span>If this is an emergency, please call 9-1-1.</span>
+    </div>
     <Messages
       profileAvatar={props.profileAvatar}
       typingIndicator={props.typingIndicator}
