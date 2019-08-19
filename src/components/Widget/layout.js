@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 
 import Conversation from './components/Conversation';
 import Launcher from './components/Launcher';
-import './style.scss';
+import styles from './style.scss';
 
 const WidgetLayout = props =>
   <div
-    className={`widget-container ${props.fullScreenMode ? 'full-screen' : ''} ${props.showChat ? 'opened' : ''}`}
+    className={`${styles['widget-container']} ${props.fullScreenMode ? 'full-screen' : ''} ${props.showChat ? 'opened' : ''}`}
   >
     {
       props.showChat &&
