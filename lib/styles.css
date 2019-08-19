@@ -1,4 +1,4 @@
-@-webkit-keyframes rotation-lr {
+@-webkit-keyframes civitas_rotation-lr {
   from {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
@@ -6,7 +6,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@keyframes rotation-lr {
+@keyframes civitas_rotation-lr {
   from {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
@@ -14,7 +14,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@-webkit-keyframes rotation-rl {
+@-webkit-keyframes civitas_rotation-rl {
   from {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
@@ -22,7 +22,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@keyframes rotation-rl {
+@keyframes civitas_rotation-rl {
   from {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
@@ -30,7 +30,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@-webkit-keyframes slide-in {
+@-webkit-keyframes civitas_slide-in {
   from {
     opacity: 0;
     -webkit-transform: translateY(10px);
@@ -40,7 +40,7 @@
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
-@keyframes slide-in {
+@keyframes civitas_slide-in {
   from {
     opacity: 0;
     -webkit-transform: translateY(10px);
@@ -50,7 +50,7 @@
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
-@-webkit-keyframes slide-out {
+@-webkit-keyframes civitas_slide-out {
   from {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -60,7 +60,7 @@
     -webkit-transform: translateY(10px);
             transform: translateY(10px); } }
 
-@keyframes slide-out {
+@keyframes civitas_slide-out {
   from {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -70,7 +70,7 @@
     -webkit-transform: translateY(10px);
             transform: translateY(10px); } }
 
-.widget-container {
+.civitas_widget-container {
   bottom: 0;
   display: -ms-flexbox;
   display: flex;
@@ -82,25 +82,25 @@
   right: 0;
   z-index: 9999; }
 
-.opened {
+.civitas_opened {
   width: 90vw; }
 
-.full-screen {
+.civitas_full-screen {
   margin: 0;
   max-width: none;
   width: 100%; }
-  .full-screen.opened {
+  .civitas_full-screen.civitas_opened {
     width: 100%;
     height: 100%; }
 
 @media screen and (max-width: 800px) {
-  .widget-container {
+  .civitas_widget-container {
     margin: 0;
     max-width: none;
     width: 100%; }
-    .widget-container.opened {
+    .civitas_widget-container.civitas_opened {
       height: 100%; } }
-@-webkit-keyframes rotation-lr {
+@-webkit-keyframes civitas_rotation-lr {
   from {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
@@ -108,7 +108,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@keyframes rotation-lr {
+@keyframes civitas_rotation-lr {
   from {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
@@ -116,7 +116,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@-webkit-keyframes rotation-rl {
+@-webkit-keyframes civitas_rotation-rl {
   from {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
@@ -124,7 +124,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@keyframes rotation-rl {
+@keyframes civitas_rotation-rl {
   from {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
@@ -132,7 +132,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@-webkit-keyframes slide-in {
+@-webkit-keyframes civitas_slide-in {
   from {
     opacity: 0;
     -webkit-transform: translateY(10px);
@@ -142,7 +142,7 @@
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
-@keyframes slide-in {
+@keyframes civitas_slide-in {
   from {
     opacity: 0;
     -webkit-transform: translateY(10px);
@@ -152,7 +152,7 @@
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
-@-webkit-keyframes slide-out {
+@-webkit-keyframes civitas_slide-out {
   from {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -162,7 +162,7 @@
     -webkit-transform: translateY(10px);
             transform: translateY(10px); } }
 
-@keyframes slide-out {
+@keyframes civitas_slide-out {
   from {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -172,44 +172,44 @@
     -webkit-transform: translateY(10px);
             transform: translateY(10px); } }
 
-.conversation-container {
+.civitas_conversation-container {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: slide-in;
+  -webkit-animation-name: civitas_slide-in;
   -webkit-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   -moz-animation-delay: 0;
   -moz-animation-duration: 0.5s;
-  -moz-animation-name: slide-in;
+  -moz-animation-name: civitas_slide-in;
   -moz-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   animation-delay: 0;
   animation-duration: 0.5s;
-  animation-name: slide-in;
+  animation-name: civitas_slide-in;
   animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   border-radius: 10px;
   -webkit-box-shadow: 0px 2px 10px 1px #b5b5b5;
           box-shadow: 0px 2px 10px 1px #b5b5b5; }
 
-.slide-out {
+.civitas_slide-out {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: slide-out;
+  -webkit-animation-name: civitas_slide-out;
   -webkit-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   -moz-animation-delay: 0;
   -moz-animation-duration: 0.5s;
-  -moz-animation-name: slide-out;
+  -moz-animation-name: civitas_slide-out;
   -moz-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   animation-delay: 0;
   animation-duration: 0.5s;
-  animation-name: slide-out;
+  animation-name: civitas_slide-out;
   animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */ }
 
-.full-screen .conversation-container {
+.civitas_full-screen .civitas_conversation-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -217,13 +217,16 @@
   height: 100%; }
 
 @media screen and (max-width: 800px) {
-  .conversation-container {
+  .civitas_conversation-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     height: 100%; } }
-@-webkit-keyframes rotation-lr {
+
+.civitas_warning-container {
+  display: block; }
+@-webkit-keyframes civitas_rotation-lr {
   from {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
@@ -231,7 +234,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@keyframes rotation-lr {
+@keyframes civitas_rotation-lr {
   from {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
@@ -239,7 +242,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@-webkit-keyframes rotation-rl {
+@-webkit-keyframes civitas_rotation-rl {
   from {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
@@ -247,7 +250,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@keyframes rotation-rl {
+@keyframes civitas_rotation-rl {
   from {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
@@ -255,7 +258,7 @@
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
-@-webkit-keyframes slide-in {
+@-webkit-keyframes civitas_slide-in {
   from {
     opacity: 0;
     -webkit-transform: translateY(10px);
@@ -265,7 +268,7 @@
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
-@keyframes slide-in {
+@keyframes civitas_slide-in {
   from {
     opacity: 0;
     -webkit-transform: translateY(10px);
@@ -275,7 +278,7 @@
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
-@-webkit-keyframes slide-out {
+@-webkit-keyframes civitas_slide-out {
   from {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -285,7 +288,7 @@
     -webkit-transform: translateY(10px);
             transform: translateY(10px); } }
 
-@keyframes slide-out {
+@keyframes civitas_slide-out {
   from {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -295,20 +298,20 @@
     -webkit-transform: translateY(10px);
             transform: translateY(10px); } }
 
-.launcher {
+.civitas_launcher {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: slide-in;
+  -webkit-animation-name: civitas_slide-in;
   -webkit-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   -moz-animation-delay: 0;
   -moz-animation-duration: 0.5s;
-  -moz-animation-name: slide-in;
+  -moz-animation-name: civitas_slide-in;
   -moz-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   animation-delay: 0;
   animation-duration: 0.5s;
-  animation-name: slide-in;
+  animation-name: civitas_slide-in;
   animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   -ms-flex-item-align: end;
@@ -321,53 +324,53 @@
   height: 60px;
   margin-top: 10px;
   width: 60px; }
-  .launcher:focus {
+  .civitas_launcher:focus {
     outline: none; }
 
-.open-launcher {
+.civitas_open-launcher {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: rotation-rl;
+  -webkit-animation-name: civitas_rotation-rl;
   -webkit-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   -moz-animation-delay: 0;
   -moz-animation-duration: 0.5s;
-  -moz-animation-name: rotation-rl;
+  -moz-animation-name: civitas_rotation-rl;
   -moz-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   animation-delay: 0;
   animation-duration: 0.5s;
-  animation-name: rotation-rl;
+  animation-name: civitas_rotation-rl;
   animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */ }
 
-.close-launcher {
+.civitas_close-launcher {
   width: 20px;
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: rotation-lr;
+  -webkit-animation-name: civitas_rotation-lr;
   -webkit-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   -moz-animation-delay: 0;
   -moz-animation-duration: 0.5s;
-  -moz-animation-name: rotation-lr;
+  -moz-animation-name: civitas_rotation-lr;
   -moz-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   animation-delay: 0;
   animation-duration: 0.5s;
-  animation-name: rotation-lr;
+  animation-name: civitas_rotation-lr;
   animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */ }
 
 @media screen and (max-width: 800px) {
-  .launcher {
+  .civitas_launcher {
     bottom: 0;
     margin: 20px;
     position: fixed;
     right: 0; }
-  .hide-sm {
+  .civitas_hide-sm {
     display: none; } }
-.sender {
+.civitas_sender {
   -ms-flex-align: center;
       align-items: center;
   display: -ms-flexbox;
@@ -377,27 +380,27 @@
   padding: 5px;
   border-radius: 0 0 10px 10px; }
 
-.new-message {
+.civitas_new-message {
   width: 100%;
   border: 0;
   background-color: #f4f7f9;
   height: 30px;
   padding-left: 15px; }
-  .new-message:focus {
+  .civitas_new-message:focus {
     outline: none; }
 
-.send {
+.civitas_send {
   background: #f4f7f9;
   border: 0; }
-  .send .send-icon {
+  .civitas_send .civitas_send-icon {
     height: 25px; }
 
 @media screen and (max-width: 800px) {
-  .sender {
+  .civitas_sender {
     border-radius: 0;
     -ms-flex-negative: 0;
         flex-shrink: 0; } }
-.conversation-container .header {
+.civitas_conversation-container .civitas_header {
   background-color: #35cce6;
   border-radius: 10px 10px 0 0;
   color: #fff;
@@ -408,31 +411,31 @@
   text-align: center;
   padding: 15px 0 25px; }
 
-.conversation-container .title {
+.civitas_conversation-container .civitas_title {
   font-size: 24px;
   margin: 0;
   padding: 15px 0; }
 
-.conversation-container .close-button {
+.civitas_conversation-container .civitas_close-button {
   display: none; }
 
-.conversation-container .avatar {
+.civitas_conversation-container .civitas_avatar {
   width: 40px;
   height: 40px;
   border-radius: 100%;
   margin-right: 10px;
   vertical-align: middle; }
 
-.full-screen .header {
+.civitas_full-screen .civitas_header {
   border-radius: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   position: relative; }
 
-.full-screen .title {
+.civitas_full-screen .civitas_title {
   padding: 0 0 15px 0; }
 
-.full-screen .close-button {
+.civitas_full-screen .civitas_close-button {
   background-color: #35cce6;
   border: 0;
   display: block;
@@ -441,19 +444,19 @@
   top: 20px;
   width: 40px; }
 
-.full-screen .close {
+.civitas_full-screen .civitas_close {
   width: 20px;
   height: 20px; }
 
 @media screen and (max-width: 800px) {
-  .conversation-container .header {
+  .civitas_conversation-container .civitas_header {
     border-radius: 0;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     position: relative; }
-  .conversation-container .title {
+  .civitas_conversation-container .civitas_title {
     padding: 0 0 15px 0; }
-  .conversation-container .close-button {
+  .civitas_conversation-container .civitas_close-button {
     background-color: #35cce6;
     border: 0;
     display: block;
@@ -461,43 +464,57 @@
     right: 10px;
     top: 20px;
     width: 40px; }
-  .conversation-container .close {
+  .civitas_conversation-container .civitas_close {
     width: 20px;
     height: 20px; } }
-.messages-container {
+
+.civitas_react_tooltip {
+  display: block; }
+.civitas_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px; }
+
+.civitas_message {
+  margin: 10px;
+  display: -ms-flexbox;
+  display: flex; }
+
+.civitas_messages-container {
   background-color: #fff;
   height: 50vh;
   max-height: 410px;
   overflow-y: scroll;
   padding-top: 10px; }
 
-.full-screen .messages-container {
+.civitas_full-screen .civitas_messages-container {
   height: 100%;
   max-height: none; }
 
 @media screen and (max-width: 800px) {
-  .messages-container {
+  .civitas_messages-container {
     height: 100%;
     max-height: none; } }
 
-.typing-indicator:after {
+.civitas_typing-indicator:after {
   overflow: hidden;
   display: inline-block;
   vertical-align: bottom;
-  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
-  animation: ellipsis steps(4, end) 900ms infinite;
+  -webkit-animation: civitas_ellipsis steps(4, end) 900ms infinite;
+  animation: civitas_ellipsis steps(4, end) 900ms infinite;
   content: "\2026";
   /* ascii code for the ellipsis character */
   width: 0px; }
 
-@keyframes ellipsis {
+@keyframes civitas_ellipsis {
   to {
     width: 1.25em; } }
 
-@-webkit-keyframes ellipsis {
+@-webkit-keyframes civitas_ellipsis {
   to {
     width: 1.25em; } }
-.launcher .badge {
+.civitas_launcher .civitas_badge {
   position: fixed;
   top: -10px;
   right: -5px;
@@ -508,12 +525,7 @@
   text-align: center;
   line-height: 25px;
   border-radius: 50%; }
-.message {
-  margin: 10px;
-  display: -ms-flexbox;
-  display: flex; }
-
-.client {
+.civitas_client {
   background-color: #a3eaf7;
   border-radius: 10px;
   padding: 15px;
@@ -521,39 +533,33 @@
   text-align: left;
   margin-left: auto; }
 
-.response {
+.civitas_response {
   background-color: #f4f7f9;
   border-radius: 10px;
   padding: 15px;
   max-width: 215px;
   text-align: left; }
 
-.message {
+.civitas_message {
   font-size: 14px; }
 
 /* For markdown elements created with default styles */
-.message-text p {
+.civitas_message-text p {
   margin: 0; }
-
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  margin-right: 10px; }
-.snippet {
+.civitas_snippet {
   background-color: #f4f7f9;
   border-radius: 10px;
   padding: 15px;
   max-width: 215px;
   text-align: left; }
 
-.snippet-title {
+.civitas_snippet-title {
   margin: 0; }
 
-.snippet-details {
+.civitas_snippet-details {
   border-left: 2px solid #35e65d;
   margin-top: 5px;
   padding-left: 10px; }
 
-.link {
+.civitas_link {
   font-size: 12px; }
