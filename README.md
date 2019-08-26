@@ -5,7 +5,7 @@
 [![FEArmy](./assets/FEA_open_source_sm.png)](https://github.com/orgs/Wolox/teams/front-end-army/members)
 
 ## CivitasAI
-The [civitas-changes branch](https://github.com/CivitasAI/react-chat-widget/tree/civitas-changes) is used in [civitas-frontend-react](https://github.com/CivitasAI/civitas-frontend-react) repository as a dependency.
+The React-Chat-Widget is used in [civitas-frontend-react](https://github.com/CivitasAI/civitas-frontend-react) repository as a dependency.
 
 ## Features
 
