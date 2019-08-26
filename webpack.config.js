@@ -28,7 +28,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
-              localIdentName: 'civitas_[local]'
+              localIdentName: 'civitas-[local]'
             }
           },
           {
