@@ -36,7 +36,7 @@ class Messages extends Component {
       <div id="messages" className={styles['messages-container']}>
         {
           this.props.messages.map((message, index) =>
-            <div className={`${styles.message} civitas_${message.get('sender')}Parent`} key={index}>
+            <div className={`${styles.message} civitas-${message.get('sender')}Parent`} key={index}>
               {
                 this.props.profileAvatar &&
                 message.get('showAvatar') &&
