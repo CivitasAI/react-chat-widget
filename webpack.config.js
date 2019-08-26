@@ -24,7 +24,13 @@ module.exports = {
       use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
         use: [
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              localIdentName: 'civitas-[local]'
+            }
+          },
           {
             loader: 'postcss-loader',
             options: {

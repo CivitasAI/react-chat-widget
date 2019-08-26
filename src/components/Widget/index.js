@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { toggleChat, addUserMessage } from 'actions';
+import { isBrowser } from 'react-device-detect';
 
 import WidgetLayout from './layout';
 
@@ -9,6 +10,11 @@ class Widget extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.fullScreenMode) {
       this.props.dispatch(toggleChat());
+    }
+  }
+  componentDidMount() {
+    if (this.props.openChat && isBrowser) {
+      setTimeout(() => { this.toggleConversation(); }, 1000);
     }
   }
 
@@ -40,6 +46,7 @@ class Widget extends Component {
         fullScreenMode={this.props.fullScreenMode}
         badge={this.props.badge}
         autofocus={this.props.autofocus}
+        typingIndicator={this.props.typingIndicator}
       />
     );
   }
@@ -55,7 +62,9 @@ Widget.propTypes = {
   showCloseButton: PropTypes.bool,
   fullScreenMode: PropTypes.bool,
   badge: PropTypes.number,
-  autofocus: PropTypes.bool
+  autofocus: PropTypes.bool,
+  openChat: PropTypes.bool,
+  typingIndicator: PropTypes.bool
 };
 
 export default connect()(Widget);

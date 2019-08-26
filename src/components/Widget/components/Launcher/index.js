@@ -5,15 +5,15 @@ import Badge from './components/Badge';
 
 import openLauncher from 'assets/launcher_button.svg';
 import close from 'assets/clear-button.svg';
-import './style.scss';
+import styles from './style.scss';
 
 const Launcher = ({ toggle, chatOpened, badge }) =>
-  <button type="button" className={chatOpened ? 'launcher hide-sm' : 'launcher'} onClick={toggle}>
-    <Badge badge ={badge} />
+  <button type="button" className={chatOpened ? `${styles.launcher} ${styles['hide-sm']}` : `${styles.launcher}`} onClick={toggle}>
+    <Badge badge={badge} />
     {
       chatOpened ?
-        <img src={close} className="close-launcher" alt="" /> :
-        <img src={openLauncher} className="open-launcher" alt="" />
+        <img src={close} className={styles['close-launcher']} alt="" /> :
+        <img src={openLauncher} className={styles['open-launcher']}alt="" />
     }
   </button>;
 

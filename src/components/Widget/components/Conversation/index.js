@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import Header from './components/Header';
 import Messages from './components/Messages';
 import Sender from './components/Sender';
-import './style.scss';
+import styles from './style.scss';
 
 const Conversation = props =>
-  <div className="conversation-container">
+  <div className={styles['conversation-container']}>
     <Header
       title={props.title}
       subtitle={props.subtitle}
@@ -15,8 +15,12 @@ const Conversation = props =>
       showCloseButton={props.showCloseButton}
       titleAvatar={props.titleAvatar}
     />
+    <div className={styles['warning-container']} id="warning">
+      <span>If this is an emergency, please call 9-1-1.</span>
+    </div>
     <Messages
       profileAvatar={props.profileAvatar}
+      typingIndicator={props.typingIndicator}
     />
     <Sender
       sendMessage={props.sendMessage}
@@ -36,7 +40,8 @@ Conversation.propTypes = {
   toggleChat: PropTypes.func,
   showCloseButton: PropTypes.bool,
   disabledInput: PropTypes.bool,
-  autofocus: PropTypes.bool
+  autofocus: PropTypes.bool,
+  typingIndicator: PropTypes.bool
 };
 
 export default Conversation;

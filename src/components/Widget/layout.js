@@ -4,13 +4,11 @@ import PropTypes from 'prop-types';
 
 import Conversation from './components/Conversation';
 import Launcher from './components/Launcher';
-import './style.scss';
+import styles from './style.scss';
 
 const WidgetLayout = props =>
   <div
-    className={
-      `widget-container ${props.fullScreenMode ? 'full-screen' : ''} ${props.showChat ? 'opened' : ''}`
-    }
+    className={`${styles['widget-container']} ${props.fullScreenMode ? 'full-screen' : ''} ${props.showChat ? 'opened' : ''}`}
   >
     {
       props.showChat &&
@@ -26,6 +24,7 @@ const WidgetLayout = props =>
         disabledInput={props.disabledInput}
         autofocus={props.autofocus}
         titleAvatar={props.titleAvatar}
+        typingIndicator={props.typingIndicator}
       />
     }
     {
@@ -50,7 +49,8 @@ WidgetLayout.propTypes = {
   disabledInput: PropTypes.bool,
   fullScreenMode: PropTypes.bool,
   badge: PropTypes.number,
-  autofocus: PropTypes.bool
+  autofocus: PropTypes.bool,
+  typingIndicator: PropTypes.bool
 };
 
 export default connect(store => ({
