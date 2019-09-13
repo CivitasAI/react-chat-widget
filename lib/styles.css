@@ -417,7 +417,7 @@
   padding: 15px 0; }
 
 .civitas-conversation-container .civitas-close-button {
-  display: none; }
+  display: none !important; }
 
 .civitas-conversation-container .civitas-avatar {
   width: 40px;
