@@ -18,7 +18,7 @@
     padding: 15px 0;
   }
 
-  .close-button {
+  button.close-button {
     display: none !important;
   }
 
@@ -60,7 +60,7 @@
       @include title-fs;
     }
 
-    .close-button {
+    button.close-button {
       @include close-button-fs;
     }
 

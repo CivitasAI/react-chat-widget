@@ -416,7 +416,7 @@
   margin: 0;
   padding: 15px 0; }
 
-.civitas-conversation-container .civitas-close-button {
+.civitas-conversation-container button.civitas-close-button {
   display: none !important; }
 
 .civitas-conversation-container .civitas-avatar {
@@ -435,10 +435,10 @@
 .civitas-full-screen .civitas-title {
   padding: 0 0 15px 0; }
 
-.civitas-full-screen .civitas-close-button {
+.civitas-full-screen button.civitas-close-button {
   background-color: #35cce6;
   border: 0;
-  display: block;
+  display: block !important;
   position: absolute;
   right: 10px;
   top: 20px;
@@ -456,10 +456,10 @@
     position: relative; }
   .civitas-conversation-container .civitas-title {
     padding: 0 0 15px 0; }
-  .civitas-conversation-container .civitas-close-button {
+  .civitas-conversation-container button.civitas-close-button {
     background-color: #35cce6;
     border: 0;
-    display: block;
+    display: block !important;
     position: absolute;
     right: 10px;
     top: 20px;
